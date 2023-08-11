@@ -11,11 +11,11 @@
             width="150rem" style="border-radius: 50%;" alt="">
 
     <h1>ID : {{ user.username }}</h1>
-    <h3>First_Name : {{ user.first_name }}</h3>
-    <h3>Last_Name : {{ user.last_name }}</h3>
-    <h3>Email : {{ user.email }}</h3>
+    <h3>Name : {{ user.name }}</h3>
     <h3>Age : {{ user.age }}</h3>
-    <h3>Address : {{ user.address }}</h3>
+    <h3>Email : {{ user.email }}</h3>
+    <h3>gender : {{ user.gender }}</h3>
+    <h3>phone_number : {{ user.phone_number }}</h3>
 
     {% if request.user == user %}
         <a href="{% url 'user_update' %}">회원 수정</a>
